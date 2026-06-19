@@ -1,0 +1,26 @@
+{
+  "name": "cortex-plugin-graphql-composer",
+  "version": "1.0.0",
+  "description": "GraphQL Schema Composer — Introspect REST/DB/gRPC to compose unified GraphQL schema with federation support",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-graphql-composer",
+  "homepage": "https://cortexprism.io/marketplace/plugins/graphql-composer",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "gql_introspect",
+      "description": "Introspect existing APIs and databases",
+      "params": []
+    },
+    { "name": "gql_compose_schema", "description": "Compose unified GraphQL schema", "params": [] },
+    { "name": "gql_generate_resolvers", "description": "Generate resolver stubs", "params": [] },
+    { "name": "gql_optimize_queries", "description": "Optimize N+1 query patterns", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
